@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Holidays</title>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <nav>
+        <img src="logo.png" alt="logo">
+        <ul>
+            <li>Request_Holiday</li>
+            <li>Holidays</li>
+            <li>Employee_Details</li>
+            <li>Employment_Period</li>
+        </ul>
+    </nav>
+    <section>
+        <div class="Left">
+        <h1>CPC <br> Calculation Holidays</h1>
+        <p>Introducing the CPC Holiday Calculator & Management Web App: Efficiently calculate and manage employee
+            holidays for CPC Company in the Egyptian oil field industry. Features include accurate holiday calculations,
+            comprehensive data storage, and customizable settings. Simplify holiday management and improve efficiency
+            with our user-friendly web app.</p>
+        </div>
+        <img src="side.png" alt="">
+    </section>
+    <form class="popup" method="post" action="http://localhost:8000/Request_Holiday">
+        <h2></h2>
+
+        <div id="data">
+            <select id="holidayType">
+                <option value="paid-vacation">Paid vacation</option>
+                <option value="sick-leave">Sick leave</option>
+                <option value="personal-day">Personal day</option>
+                <option value="family-medical-leave">Family and medical leave</option>
+                <option value="bereavement-leave">Bereavement leave</option>
+                <option value="maternity-paternity-leave">Maternity or paternity leave</option>
+                <option value="parental-leave">Parental leave</option>
+                <option value="jury-duty-leave">Jury duty leave</option>
+                <option value="military-leave">Military leave</option>
+                <option value="sabbatical">Sabbatical or career break</option>
+                <option value="unpaid-leave">Unpaid leave</option>
+                <option value="remote-work">Remote work or telecommuting</option>
+                <option value="flextime">Flextime or flexible working hours</option>
+                <option value="compensatory-time-off">Compensatory time off</option>
+                <option value="holiday-time">Holiday time off</option>
+                
+              </select>
+        </div>
+
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
